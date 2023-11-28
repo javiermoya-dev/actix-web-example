@@ -1,3 +1,4 @@
+use actix_cors::Cors;
 use actix_web::{get, web, App, HttpServer, Responder};
 use serde::Serialize;
 
