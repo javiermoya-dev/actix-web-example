@@ -1,0 +1,3 @@
+# diesel.toml
+[print_schema]
+file = "src/schema.rs"
