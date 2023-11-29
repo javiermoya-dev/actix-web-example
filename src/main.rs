@@ -30,7 +30,7 @@ async fn index() -> impl Responder {
 }
 
 #[get("/items")]
-async fn get_items(pool: web::Data<DbConnection>) -> impl Responder {
+async fn get_items() -> impl Responder {
     use crate::models::Item;
 
     match Item::all(&mut db::connection()) {
